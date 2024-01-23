@@ -1,0 +1,77 @@
+<div>
+    <h1 style="text-align: center;">{{title}}</h1>
+</div>
+
+<form [formGroup]="prodetails" (ngSubmit)="submitReg()">
+    <div class="container bg-primary" style="border: 1px solid black; min-height: 500px; width: 500px; padding: 20px;">
+        <div class="row">
+            <label for="pid">Product ID</label><br/>
+            <input type="number" name="pid" id="pid" formControlName="pid" >
+            <div *ngIf="!prodetails.controls.pid?.valid && (prodetails.controls.pid?.dirty || prodetails.controls.pid?.touched)" class="alert alert-danger">
+                <div [hidden]="!ProductId?.errors['required']">
+                    ProductId is Mandatory
+                </div>
+                <div [hidden]="!ProductId?.errors['pattern']">
+                    ProductId must have minimun 3 characters
+            </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <label for="pname">Product Name</label><br/>
+            <input type="text" name="pname" id="pname" formControlName="pname">
+            <div *ngIf="!prodetails.controls.pname?.valid && (prodetails.controls.pname?.dirty || prodetails.controls.pname?.touched)" class="alert alert-danger">
+                <div [hidden]="!ProductName?.errors['required']">
+                    ProductName is Mandatory
+                </div>
+                <div [hidden]="!ProductName?.errors['minlength']">
+                    ProductName must have minimun 6 characters
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <label for="pdesc">Product Description</label><br/>
+            <input type="pdesc" name="pdesc" id="pdesc" formControlName="pdesc">
+        </div>
+        <div class="row">
+            <label for="pprice">Product Price</label><br/>
+            <input type="pprice" name="pprice" id="pprice" formControlName="pprice">
+            <div *ngIf="!prodetails.controls.pprice?.valid && (prodetails.controls.pprice?.dirty || prodetails.controls.pprice?.touched)" class="alert alert-danger">
+                <div [hidden]="!ProductPrice?.errors['required']">
+                    ProductpPrice is Mandatory
+                </div>
+                <div [hidden]="!ProductPrice?.errors['pattern']">
+                    ProductpPrice should be number
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <label for="pqty">Product Qty</label><br/>
+            <input type="pqty" name="pqty" id="pqty" formControlName="pqty">
+            <div *ngIf="!prodetails.controls.pqty?.valid && (prodetails.controls.pqty?.dirty || prodetails.controls.pqty?.touched)" class="alert alert-danger">
+                <div [hidden]="!Productqty?.errors['required']">
+                    Productqty is Mandatory
+                </div>
+                <div [hidden]="!Productqty?.errors['pattern']">
+                    Productqty should be number
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <label for="pavail">Product Availability
+                <input type="checkbox" value="yes" checked />
+            </label>
+            
+            
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <button type="submit" [disabled]="!prodetails.valid" class="btn btn-primary">Add Product</button>
+        </div>
+        
+    </div>
+
+   
+
+</form>
