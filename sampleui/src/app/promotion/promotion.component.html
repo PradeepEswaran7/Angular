@@ -1,0 +1,220 @@
+<header style="background-color: rgb(205, 207, 207); width: 100%; ">
+    <div class="spacer" >
+    <img src="https://imageio.forbes.com/specials-images/imageserve/652cb4ea1c9ab9eec8ce92b9/Dufry-new-Avolta-logo-gif/960x0.gif?format=gif&width=960" height="25" width="28" style="float: left; padding-left: 10px; background-color:rgb(205, 207, 207); margin-top: 5px;">&nbsp;  &nbsp;  &nbsp;
+    <mat-icon aria-hidden="false" fontIcon="home" style="float: left; margin-top: 5px; margin-left: 10px;"></mat-icon>
+    <a mat-button><mat-icon aria-hidden="false" fontIcon="expand_more"></mat-icon>Promotions</a>
+    <a mat-button><mat-icon aria-hidden="false" fontIcon="expand_more"></mat-icon>Advertising</a>
+    <a mat-button><mat-icon aria-hidden="false" fontIcon="expand_more"></mat-icon>Brand Ambassadors</a>
+    <a mat-button><mat-icon aria-hidden="false" fontIcon="expand_more"></mat-icon>Volume Rebate</a>
+    <a mat-button><mat-icon aria-hidden="false" fontIcon="expand_more"></mat-icon>Configuration</a>
+    <a mat-button><mat-icon aria-hidden="false" fontIcon="expand_more"></mat-icon>Income Management</a>
+    <mat-icon aria-hidden="false" fontIcon="account_circle"style="float: right; margin-top: 10px; margin-right: 10px;"></mat-icon>
+    <mat-icon aria-hidden="false" fontIcon="notifications" style="float: right; margin-top: 10px; margin-right: 10px;"></mat-icon>
+    <p style="float: right; margin-top: 12px; margin-right: 10px;">Region 1</p>
+    <mat-icon aria-hidden="false" fontIcon="public" style="float: right; margin-top: 10px; margin-right: 10px;"></mat-icon>
+  </div>
+  </header>
+  <div class="body">
+    <div class="card">
+      <div class="container">
+       
+        <mat-stepper
+          class="example-stepper"
+          [orientation]="(stepperOrientation | async)!">
+          <p><h4><b>&emsp;Promotion Management </b>/ Create Promotion</h4>
+          <mat-step [stepControl]="firstFormGroup" label="Promotion Details">
+            <form [formGroup]="firstFormGroup">
+              <!-- <mat-form-field>
+                <mat-label>Promotion</mat-label>
+                <input matInput placeholder="Promotion Details" formControlName="firstCtrl" required>
+              </mat-form-field> -->
+              <!-- <div>
+                <button mat-button matStepperNext>Next</button>
+              </div> -->
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup" label="Companies & Shops">
+            <form [formGroup]="secondFormGroup">
+              <!-- <mat-form-field>
+                <mat-label>Company</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Company Name"
+                       required>
+              </mat-form-field> -->
+              <!-- <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </div> -->
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="thirdFormGroup" label="Promotion Configuration">
+            <form [formGroup]="thirdFormGroup">
+              <!-- <mat-form-field>
+                <mat-label>Configuration</mat-label>
+                <input matInput formControlName="thirdCtrl" placeholder="Configuration" required>
+              </mat-form-field> -->
+              <!-- <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </div> -->
+            </form>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Items</ng-template>
+            <!-- <p>You are now done.</p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+            </div> -->
+          </mat-step>
+        </mat-stepper>
+        <div class="container2">
+            <p><b style="font-size: 5rcap;">50%</b><br>Completed</p>
+            <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+        </div>
+        <div class="container3">
+          <button style="padding: 10px; margin-left: 120px; margin-top: 1px;">&#11164;Summary</button>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <h2><b>Group Name:</b> Multi Promo Feb-1<button><mat-icon aria-hidden="false" fontIcon="edit"></mat-icon></button></h2>
+      <h3><b>STEP 3: Promotion Configuration</b></h3>
+      <p>Let's dive into the specifics of your promotion.  Choose the Configuration that best describes your exciting offers from the options below</p>
+    </div>
+
+    <div class="row1">
+      <div class="col-4">
+        <div class="card1">
+          <h2 style="margin-left: 10px; margin-top: 10px;"><b>Promotion Type</b></h2>
+          <p style="margin-left: 10px;"> Tailor your promotion by specifying its type.
+            Choose from the option below to categorize your offers.
+          </p>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="view_in_ar"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="view_in_ar"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="view_in_ar"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="view_in_ar"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="view_in_ar"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="view_in_ar"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="view_in_ar"></mat-icon></button>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card2">
+          <div class="container4">
+          <h2 style="margin-left: 10px;  margin-top: 10px;"><b>Campaign</b></h2>
+            <p style="margin-left: 10px;">A Campaign is coordinated marketing effort across channels to boost sales, enhance brand awareness.</p>
+          <p style="margin-left: 10px;"    ><b>Suggested Companies</b></p>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+        </div>
+        <div class="container5">
+          <label for="value" ><b>Select Manually</b></label><br>
+          <select name="value" id="value" size="1">
+            <option >Please Select &nbsp;&nbsp;&nbsp;</option>
+          </select><br><br>
+          <label for="type"><b>Campaign Type</b></label><br>
+          <input name="type" id="type" value="Ad-hoc" style="height: 40px; background-color: rgb(196, 192, 187); border: none;">
+        </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card3">
+          <div class="youtube">            
+           <mat-icon aria-hidden="false" fontIcon="emoji_objects"></mat-icon>
+          Not sure where to begin ?
+          <div class="container6">
+          <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJalcmbO-n9xiymjiIPY2ReS-J4wjcsaYXcFYzKcevXQ&s" height="25" width="28" style="margin-top: 5px;">How to define organisation level ?</a><br>
+          <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJalcmbO-n9xiymjiIPY2ReS-J4wjcsaYXcFYzKcevXQ&s" height="25" width="28" style="margin-top: 5px;">How to define organisation level ?</a><br>
+          <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJalcmbO-n9xiymjiIPY2ReS-J4wjcsaYXcFYzKcevXQ&s" height="25" width="28" style="margin-top: 5px;">How to define organisation level ?</a><br>
+          <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJalcmbO-n9xiymjiIPY2ReS-J4wjcsaYXcFYzKcevXQ&s" height="25" width="28" style="margin-top: 5px;">How to define organisation level ?</a><br>
+        </div><br>
+         <!-- <li> 
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJalcmbO-n9xiymjiIPY2ReS-J4wjcsaYXcFYzKcevXQ&s" height="25" width="28" style="margin-top: 5px;">
+              How to define organisation level ?
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJalcmbO-n9xiymjiIPY2ReS-J4wjcsaYXcFYzKcevXQ&s" height="25" width="28" style="margin-top: 5px;">
+              How to define organisation level ?
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJalcmbO-n9xiymjiIPY2ReS-J4wjcsaYXcFYzKcevXQ&s" height="25" width="28" style="margin-top: 5px;">
+              How to define organisation level ?
+            </a>
+          </li> -->
+
+        </div>
+        <a href="#" style="margin-left: 50px; margin-top: 50px;">See All the tutorials</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div class="col-4">
+        <div class="card1">
+          <h2 style="margin-left: 10px;  margin-top: 10px;"><b>Promotion Mechanic</b></h2>
+            <p style="margin-left: 10px;">Offers temporary price deductions or percentage discounts on products or services to incentivize immediate purchase</p>
+            <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card4">
+          <h2 style="margin-left: 10px;  margin-top: 10px;"><b>Audiences</b></h2>
+          <input type="checkbox" name="loyalty" id="loyalty" style="margin-left: 10px;">
+          <label for="loyalty"><b>Loyalty Members</b>
+            <p style="margin-left: 25px;"> Customize your engagement by selecting specfic loyalty members for your program and promotion.</p>
+            <button mat-button style="margin-left: 10px;"><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+            <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+            <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          </label><br><br>
+          <input type="checkbox" name="reserve" id="reserve" style="margin-left: 10px;">
+          <label for="reserve"><b>Reserve & Collect</b></label>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card5">
+          <h2 style="margin-left: 10px;  margin-top: 10px;"><b>Channel</b></h2>
+            <p style="margin-left: 10px;">Offers temporary price deductions or percentage discounts on products or services to incentivize immediate purchase</p>
+            <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+          <button mat-button><mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon></button>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card3">
+          <h2 style="margin-left: 10px;  margin-top: 10px;"><b>Remarks</b></h2>
+          <p style="margin-left: 10px;">Your Custom Description adds personal touch to your promotion.</p>
+          <p style="font-size: 5rcap; margin-left: 10px;"><b>O</b></p><p style="margin-left: 10px;"><b>Probability Score</b></p>
+          <input type="text" placeholder="Type here" style="margin-left: 10px; width: 150px; border: 1px solid rgb(182, 179, 176);">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="border: 0.5px solid rgb(216, 216, 216); height: 19%;">
+    <div class="row">
+      <div class="column" style="margin-right: 450px; margin-top: 20px; margin-left: 20px;">
+        <button mat-button style="border: 1px solid black;">Back to Companies & Shops</button>
+      </div>
+      <div class="column" style="margin-left: 200px;">
+        This promotion will save as a draft automatically if you exit without saving.
+      </div>
+      <div class="column" >
+        <button mat-button style="border: 1px solid black; margin-top: 10px; ">Discard</button>&nbsp;
+        <button mat-button style="border: 1px solid black; margin-top: 10px; color: white;  background-color: black;">Add Items</button>
+      </div>
+    </div> 
+    <div  style="background-color: rgb(216, 216, 216); margin-top: 10px;" >
+      <p style="margin-left: 40%;">&copy; 79XX - 20XX Avolta. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  
